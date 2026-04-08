@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three Star Media</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- SITE HEADER Inner wrapper used to constrain and center  -->
+    <header class="site-header">
+      <div class="header-inner">
+        <!-- Company logo -->
+        <div class="logo-area">
+          <img src="assets/images/logo.png" alt="Three Star Media logo" />
+        </div>
+
+        <!-- Primary navigation -->
+        <div class="nav-wrapper">
+          <nav aria-label="Primary navigation">
+            <ul class="nav-links">
+              <li><a href="#welcome">Home</a></li>
+              <li><a href="#our-story">About Us</a></li>
+              <li><a href="#what-we-do">Services</a></li>
+              <li><a href="#our-people">Team</a></li>
+              <li><a href="#reach-us">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- HTML5 search element — new semantic tag -->
+        <search class="site-search">
+          <form action="#" method="get">
+            <input
+              type="search"
+              name="q"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+            <button type="submit">&#128269;</button>
+          </form>
+        </search>
+      </div>
+    </header>
+
+    <main>
+      <!--  HERO / WELCOME hgroup used to group heading + subheading  -->
+      <section id="welcome" class="hero">
+        <div class="hero-body">
+          <!-- hgroup is correct when heading and subtitle are related -->
+          <hgroup>
+            <h1>Welcome to Three Star Media</h1>
+            <p class="hero-sub">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              rerum voluptas nesciunt quam nostrum similique nihil laboriosam
+              provident neque.
+            </p>
+          </hgroup>
+          <a href="#reach-us" class="btn-primary">Connect with us &#9658;</a>
+        </div>
+      </section>
+
+      <!--  ABOUT US -->
+      <section id="our-story" class="about-section">
+        <div class="about-grid">
+          <!-- picture allows for responsive image sources -->
+          <div class="about-photo">
+            <picture>
+              <source
+                srcset="assets/images/about-us.jpg"
+                media="(min-width: 600px)"
+              />
+              <img
+                src="assets/images/about-us.jpg"
+                alt="A modern office space with a ping pong table"
+              />
+            </picture>
+          </div>
+
+          <div class="about-copy">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              unde repellendus exercitationem asperiores consequatur recusandae.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              velit ipsam atque accusamus nihil laudantium sapiente blanditiis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="what-we-do" class="services-section">
+        <h2>Our Services</h2>
+
+        <dl class="services-dl">
+          <!-- dt = service name, dd = service details -->
+          <div class="svc-block svc-wide">
+            <dt>
+              <img
+                src="assets/images/digital.jpg"
+                alt="Analytics shown on a laptop screen"
+              />
+              <span>Digital Transformation</span>
+            </dt>
+            <dd>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn-secondary">Digital Plans &#9658;</a>
+            </dd>
+          </div>
+
+          <div class="svc-block svc-wide">
+            <dt>
+              <img
+                src="assets/images/marketing.jpg"
+                alt="Phone with YouTube logo"
+              />
+              <span>Marketing</span>
+            </dt>
+            <dd>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn-secondary">Marketing Plans &#9658;</a>
+            </dd>
+          </div>
+
+          <div class="svc-block svc-narrow">
+            <dt>
+              <img
+                src="assets/images/video.jpg"
+                alt="Smartphone beside a notebook"
+              />
+              <span>Video Production</span>
+            </dt>
+            <dd>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn-secondary">Video Plans &#9658;</a>
+            </dd>
+          </div>
+
+          <div class="svc-block svc-narrow">
+            <dt>
+              <img
+                src="assets/images/web.jpg"
+                alt="Newspaper boxes on a sidewalk"
+              />
+              <span>Web Development</span>
+            </dt>
+            <dd>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn-secondary">Web Plans &#9658;</a>
+            </dd>
+          </div>
+
+          <div class="svc-block svc-narrow">
+            <dt>
+              <img
+                src="assets/images/print.jpg"
+                alt="Stack of printed documents"
+              />
+              <span>Print</span>
+            </dt>
+            <dd>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn-secondary">Print Plans &#9658;</a>
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <!--  VISION figure wraps the whole text block  -->
+      <section class="vision-section">
+        <!-- figure used here as a self-contained visual/text unit -->
+        <figure class="vision-figure">
+          <div class="vision-content">
+            <h2>Our Vision</h2>
+            <figcaption>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </figcaption>
+            <a href="#" class="btn-primary">Learn More &#9658;</a>
+          </div>
+        </figure>
+      </section>
+
+      <!--  TEAM Each member is its own section with a details element for the bio text  -->
+      <section id="our-people" class="team-section">
+        <h2>Our Team</h2>
+
+        <div class="team-grid">
+          <!-- section per member with details for bio -->
+          <section class="team-card" aria-label="John Doe">
+            <img src="assets/images/john.jpg" alt="John Doe" />
+            <div class="card-info">
+              <h3>John Doe</h3>
+              <h4>CEO &amp; Co-owner</h4>
+              <!-- details/summary lets the bio expand on click -->
+              <details open>
+                <summary class="sr-only">About John Doe</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </details>
+            </div>
+          </section>
+
+          <!-- team-card-alt flips image to the right -->
+          <section class="team-card team-card-alt" aria-label="Bob Rite">
+            <img src="assets/images/bob.jpg" alt="Bob Rite" />
+            <div class="card-info">
+              <h3>Bob Rite</h3>
+              <h4>CFO &amp; Co-owner</h4>
+              <details open>
+                <summary class="sr-only">About Bob Rite</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </details>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="reach-us" class="contact-section">
+        <h2>Contact Us</h2>
+
+        <div class="contact-layout">
+          <!-- Form with fieldset grouping the inputs -->
+          <div class="form-area">
+            <form action="#" method="post">
+              <fieldset>
+                <legend>Send us a message</legend>
+
+                <div class="form-row">
+                  <label for="fullname">Full Name</label>
+                  <input type="text" id="fullname" name="fullname" required />
+                </div>
+
+                <div class="form-row">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-row">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Send &#9658;</button>
+              </fieldset>
+            </form>
+          </div>
+
+          <!-- Map wrapped in a figure for semantic grouping -->
+          <figure class="map-figure">
+            <figcaption><h3>Our Location</h3></figcaption>
+            <!-- z=11 for wider zoom, satellite view with t=k -->
+            <iframe
+              src="https://maps.google.com/maps?q=Algonquin%20College&t=k&z=11&ie=UTF8&iwloc=&output=embed"
+              title="Satellite view of Algonquin College area"
+              allowfullscreen
+            >
+            </iframe>
+          </figure>
+
+          <!-- Hours in its own div below -->
+          <div class="hours-area">
+            <h3>Hours of Operation</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday &ndash; Friday</td>
+                  <td>9 AM &ndash; 6 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday &ndash; Sunday</td>
+                  <td>Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- dFOOTER nav used for the Unsplash attribution link  -->
+    <footer class="site-footer">
+      <p>&copy; Three Star Media, 2020. All rights reserved.</p>
+      <nav aria-label="Footer links">
+        <ul class="footer-links">
+          <li>
+            Photos from
+            <a
+              href="https://unsplash.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unsplash
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
